@@ -1,0 +1,88 @@
+body {
+  background-color: #FFF6E5; }
+
+.mainHeader {
+  padding: 0; }
+
+.mainContent {
+  padding-top: 1rem; }
+
+/* CardLayout */
+.card-header {
+  font-weight: bold; }
+
+.navbar {
+  border-radius: 0; }
+
+/* login popover */
+.loginPopOver {
+  position: absolute;
+  display: block;
+  color: black;
+  margin-top: 11px; }
+
+.loginPopOver:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid white;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; }
+
+.loginPopOver:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  margin-left: -10px;
+  bottom: 100%;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid #e0e0e0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; }
+
+.showTransition {
+  display: block; }
+
+.loginForm {
+  position: relative; }
+
+.btn-outline-success:focus, .btn-outline-success.focus {
+  color: #5cb85c;
+  background-image: none;
+  background-color: transparent;
+  border-color: #5cb85c;
+  outline: none; }
+
+.loginIconsList {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0; }
+  .loginIconsList li {
+    display: inline; }
+  .loginIconsList span {
+    cursor: pointer; }
+
+.fa-facebook-square {
+  color: #3C599F; }
+
+.fa-twitter-square {
+  color: #32CCFE; }
+
+.fa-google-plus-square {
+  color: #CF3D2E; }
+
+.fa-github-square {
+  color: #070709; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,21 @@
+<form class="form-inline pull-xs-right loginForm" *ngIf="isLoggedIn === false">
+  <button class="btn btn-outline-success" [ngClass]="{'active':loginMenuState === 'active'}" (click)="showLoginForm()">
+    Login
+  </button>
+  <div class="card loginPopOver" [@loginMenu]="loginMenuState">
+    <div class="card-block">
+      <ul class="loginIconsList">
+        <li><span (click)="login('google')"><i class="fa fa-2x fa-google-plus-square"></i></span></li>
+        <li><span (click)="login('facebook')"><i class="fa fa-2x fa-facebook-square"></i></span></li>
+        <li><span (click)="login('twitter')"><i class="fa fa-2x fa-twitter-square"></i></span></li>
+        <li><span (click)="login('github')"><i class="fa fa-2x fa-github-square"></i></span></li>
+      </ul>
+    </div>
+  </div>
+</form>
+<form class="form-inline pull-xs-right loginForm" *ngIf="isLoggedIn === true">
+  {{user.name}}
+  <button class="btn btn-outline-success" [ngClass]="{'active':loginMenuState === 'active'}" (click)="logout()">
+    Logout
+  </button>
+</form>
